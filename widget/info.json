@@ -1,0 +1,22 @@
+{
+  "subTitle": "Displays remaining time for a SLA",
+  "name": "slaCountDownClock",
+  "title": "SLA Count Down Timer",
+  "version": "2.0.1",
+  "published_date":"1601528772",	
+  "releaseNotes": "available",
+  "metadata": {
+   "pages": [
+    "View Panel"
+   ],
+   "snapshots": [
+    "https://repo.fortisoar.fortinet.com/fsr-widgets/slaCountDownClock-1.0.2/images/sla-countdown-timer-settings.png",
+    "https://repo.fortisoar.fortinet.com/fsr-widgets/slaCountDownClock-1.0.2/images/sla-countdown-timer.png"
+   ],
+   "description": "<p>SLA Count Down Timer</p><ul><li>Sets a count down timer which displays time remaining for SLA breach</li><li>Allows to display time remaining or consumed after SLA is acheived , based on setting</li><li>Requires Following</li><ul><li>SLA Due Date</li><li>SLA Complete Date</li><li>Condition to stop timer</li></ul></ul> ",
+   "help_online": "https://github.com/fortinet-fortisoar/widget-sla-countdown-timer/blob/release/2.0.1/docs/README.md",
+   "certified": "Yes",
+   "publisher": "Fortinet",
+   "compatibility": ["7.0.2"]
+  }
+ }
