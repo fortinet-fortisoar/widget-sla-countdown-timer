@@ -1,0 +1,148 @@
+<form data-ng-submit="save()" name="editCountDownClock">
+    <div class="modal-header">
+        <h3 class="modal-title col-md-9">Edit SLA CountDown Timer</h3>
+        <button type="button" class="close" data-ng-click="cancel()" data-dismiss="modal" aria-label="Close"
+            id="close-edit-count-down-clock-btn">
+            <div aria-hidden="true" class="version-button">+</div>
+        </button>
+    </div>
+    <div class="modal-body">
+        <div class="form-group" name="userForm">
+            <lable for="title" class="control-label">Title<span class="text-danger">*</span></lable>
+            <input id="title" name="title" type="text" class="form-control" data-ng-model="config.title" required>
+            <div data-cs-messages="editCountDownClock.title"></div>
+            <lable for="resourcefields" class="control-label">Select SLA Due Date<span
+                    class="text-danger">*</span><span data-uib-tooltip="Date which represent due date for SLA" data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span>
+            </lable>
+            <select name="resourcefields" id="resourcefields" class="form-control"
+                data-ng-options="field.name as field.title for field in fieldsArray | filter: {type: 'datetime'}"
+                data-ng-model="config.duedate" required>
+                <option value="">Select an Option </option>
+            </select>
+            <div data-cs-messages="editCountDownClock.resourcefields"></div>
+            <lable for="sladate" class="control-label">Select SLA Complete Date<span class="text-danger">*</span><span data-uib-tooltip="Date which represent SLA condition met" data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span></lable>
+            <select name="sladate" id="sladate" class="form-control"
+                data-ng-options="field.name as field.title for field in fieldsArray | filter: {type: 'datetime'}"
+                data-ng-model="config.sladate" required>
+                <option value="">Select an Option </option>
+            </select>
+            <div data-cs-messages="editCountDownClock.sladate"></div>
+
+
+            <lable for="slapaused" class="control-label">Select SLA Paused Date<span class="text-danger">*</span><span data-uib-tooltip="Date which represents SLA is Paused" data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span></lable>
+            <select name="slapaused" id="slapaused" class="form-control"
+                data-ng-options="field.name as field.title for field in fieldsArray | filter: {type: 'datetime'}"
+                data-ng-model="config.slapaused" required>
+                <option value="">Select an Option </option>
+            </select>
+            <div data-cs-messages="editCountDownClock.slapaused"></div>
+
+            <label for="slafieldpaused" class="control-label">Pause clock<span data-uib-tooltip="SLA state on which count down timer should pause" data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span></label>
+            <div class="row margin-bottom-sm">
+                <div class="col-md-1 padding-right-0 margin-top-sm">
+                    <label for="slafieldpaused" class="control-label margin-top-sm">When<span
+                            class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-4 padding-right-0">
+                    <div class="form-group margin-bottom-0">
+                        <select name="slafieldpaused" id="slafieldpaused" class="form-control"
+                            data-ng-options="field.name as field.title for field in fieldsArray | filter: {type: 'picklist'} "
+                            data-ng-model="config.slaPausedOn" data-ng-change="loadlistitem()" required>
+                            <option value="">Select an Option </option>
+                        </select>
+                    </div>
+                    <div data-cs-messages="editCountDownClock.slafieldpaused"></div>
+                </div>
+                <div class="col-md-2 padding-right-0 padding-left-35 margin-top-sm">
+                    <label for="metitemvalue" class="control-label margin-top-sm text-align-center"
+                        data-ng-if="config.slaPausedOn.length > 0">is set
+                        to<span class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-4 padding-right-0">
+                    <div class="form-group margin-bottom-0">
+                        <select name="metitemvalue" id="metitemvalue" class="form-control"
+                            data-ng-if="config.slaPausedOn.length > 0"
+                            data-ng-options="item.itemValue as item.itemValue for item in listItems"
+                            data-ng-model="config.pausedItemvalue" required>
+                            <option value="">Select an Option </option>
+                        </select>
+                    </div>
+                </div>
+                <div data-cs-messages="editCountDownClock.metitemvalue"></div>
+            </div>
+
+            <label for="slafield" class="control-label">Stop clock<span data-uib-tooltip="SLA state on which count down timer should stop" data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span></label>
+
+            <div class="row margin-bottom-sm">
+                <div class="col-md-1 padding-right-0 margin-top-sm">
+                    <label for="slafield" class="control-label margin-top-sm">When<span
+                            class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-4 padding-right-0">
+                    <div class="form-group margin-bottom-0">
+                        <select name="slafield" id="slafield" class="form-control"
+                            data-ng-options="field.name as field.title for field in fieldsArray | filter: {type: 'picklist'} "
+                            data-ng-model="config.slaMappedOn" data-ng-change="loadlistitem()" required>
+                            <option value="">Select an Option </option>
+                        </select>
+                    </div>
+                    <div data-cs-messages="editCountDownClock.slafield"></div>
+                </div>
+                <div class="col-md-2 padding-right-0 padding-left-35 margin-top-sm">
+                    <label for="metitemvalue" class="control-label margin-top-sm text-align-center"
+                        data-ng-if="config.slaMappedOn.length > 0">is set
+                        to<span class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-4 padding-right-0">
+                    <div class="form-group margin-bottom-0">
+                        <select name="metitemvalue" id="metitemvalue" class="form-control"
+                            data-ng-if="config.slaMappedOn.length > 0"
+                            data-ng-options="item.itemValue as item.itemValue for item in listItems"
+                            data-ng-model="config.metItemvalue" required>
+                            <option value="">Select an Option </option>
+                        </select>
+                    </div>
+                </div>
+                <div data-cs-messages="editCountDownClock.metitemvalue"></div>
+            </div>
+
+            <div class="row margin-bottom-sm">
+                <div class="col-md-3 padding-right-0 margin-top-sm">
+                    <label for="slafield" class="control-label margin-top-sm"
+                        data-ng-if="config.metItemvalue.length > 0 && config.slaMappedOn.length > 0" >and set title to<span
+                            class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-9 padding-left-0 padding-right-20">
+                    <input id="stopStateTitle" name="stopStateTitle" type="text" class="form-control"
+                        data-ng-model="config.stopStateTitle" data-ng-if="config.metItemvalue.length > 0 && config.slaMappedOn.length > 0" required>
+                </div>
+
+                <div data-cs-messages="editCountDownClock.stopStateTitle"></div>
+            </div>
+            <label for="info" class="control-label margin-top-sm"
+                data-ng-if="config.stopStateTitle.length > 0 && config.slaMappedOn.length > 0 && config.metItemvalue.length > 0 ">Show<span class="text-danger">*</span></label>
+            <div class="row margin-bottom-sm">
+                
+                <div class="col-md-6 padding-right-0">
+                    <div class="radio">
+                        <label data-ng-if="config.stopStateTitle.length > 0 && config.slaMappedOn.length > 0 && config.metItemvalue.length > 0 "><input id="remainingTime" name="remainingTime" type="radio" 
+                                data-ng-if="config.stopStateTitle.length > 0 && config.slaMappedOn.length > 0 && config.metItemvalue.length > 0 " data-ng-model="config.timeToDisplay" value="remainingTime">&nbsp;&nbsp;Remaining Time</label>
+                    </div>
+                    <div class="radio">            
+                        <label data-ng-if="config.stopStateTitle.length > 0 && config.slaMappedOn.length > 0 && config.metItemvalue.length > 0 "><input id="consumedTime" name="consumedTime" type="radio" 
+                                data-ng-if="config.stopStateTitle.length > 0 && config.slaMappedOn.length > 0 && config.metItemvalue.length > 0 " data-ng-model="config.timeToDisplay" value="consumedTime">&nbsp;&nbsp;Consumed Time</label>       
+                    </div>
+                </div>
+                <div data-cs-messages="editCountDownClock.remainingTime"></div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal-footer">
+        <button id="widget-edit-save" type="submit" class="btn btn-sm btn-primary"><i
+                class="icon icon-check margin-right-sm"></i>Save</button>
+        <button id="widget-edit-cancel" type="button" class="btn btn-sm btn-default" data-ng-click="cancel()"><i
+                class="icon icon-close margin-right-sm"></i>Close</button>
+    </div>
+</form>
