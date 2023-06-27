@@ -60,7 +60,7 @@
             if (widgetsubscription) {
                 websocketService.unsubscribe(widgetsubscription);
             }
-            websocketService.subscribe($state.params.module+'/'+$state.params.id, function (result) {
+            websocketService.subscribe($state.params.module + '/' + $state.params.id, function (result) {
                 var changedAttribute;
                 if (angular.isDefined(result['changeData'])) {
                     if (result['changeData'].includes(config.duedate)) {
@@ -98,7 +98,7 @@
                                 $scope.sladate = new Date($filter('unixToDate')(result[config.sladate]));
                                 $scope.duedate = new Date($filter('unixToDate')(result[config.duedate]));
                                 $scope.createdate = new Date($filter('unixToDate')(result['createDate']));
-                                
+
                                 $scope.title = config.stopStateTitle;
                                 $scope.slastate = "Met";
                                 if (config.timeToDisplay === "consumedTime") {
@@ -135,32 +135,24 @@
             else {
                 total = Date.parse(duedate) - Date.parse(new Date());
             }
+            var seconds = 0;
+            var minutes = 0;
+            var hours = 0;
+            var days = 0;
             if (total > 0) {
-                var seconds = Math.floor((total / 1000) % 60);
-                var minutes = Math.floor((total / 1000 / 60) % 60);
-                var hours = Math.floor((total / (1000 * 60 * 60)) % 24);
-                var days = Math.floor(total / (1000 * 60 * 60 * 24));
-                return {
-                    total,
-                    days,
-                    hours,
-                    minutes,
-                    seconds
-                };
+                seconds = Math.floor((total / 1000) % 60);
+                minutes = Math.floor((total / 1000 / 60) % 60);
+                hours = Math.floor((total / (1000 * 60 * 60)) % 24);
+                days = Math.floor(total / (1000 * 60 * 60 * 24));
+
             }
-            else {
-                var seconds = 0;
-                var minutes = 0;
-                var hours = 0;
-                var days = 0;
-                return {
-                    total,
-                    days,
-                    hours,
-                    minutes,
-                    seconds
-                };
-            }
+            return {
+                total,
+                days,
+                hours,
+                minutes,
+                seconds
+            };
         }
         function initializeClock(id, duedate) {
             function updateClock() {
