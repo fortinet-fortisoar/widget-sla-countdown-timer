@@ -1,12 +1,12 @@
 ## SLA Countdown Timer
 
-**Certified**: Yes
+- **Certified**: Yes
 
-**Publisher**: Fortinet
+- **Publisher**: Fortinet
 
-**Compatibility**: 7.0.2 and higher
+- **Compatibility**: 7.0.2 and higher
 
-**Applicable**: View Panel
+- **Applicable**: View Panel
 
 - [Release Notes](./widget/release_notes.md)
 
