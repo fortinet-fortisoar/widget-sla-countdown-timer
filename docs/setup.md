@@ -1,20 +1,14 @@
-## SLA Countdown Timer
+| [Home](../README.md) |
+|----------------------|
 
-Represents the time remaining to respond without breaching the SLA OR the time consumed to meet the SLA.
+# Installation
 
-<img src="./media/sla-countdown-timer.png" alt="SLA Countdown Timer" style="border: 1px solid #A9A9A9; border-radius: 4px; padding: 10px; display: block; margin-left: auto; margin-right: auto; width: 80%">
-<br/>
+1. To install a widget, click **Content Hub** > **Discover**.
+2. From the list of widget that appears, search for and select **SLA Count Down Timer**.
+3. Click the card of the **SLA Count Down Timer** widget.
+4. Click **Install** on the bottom to begin installation.
 
-**Certified**: Yes
-
-**Publisher**: Fortinet
-
-**Compatibility**: 7.0.2 and higher
-
-**Applicable**: View Panel
-
-**Widget Details**:  
-The following information need to be filled:
+# Configuration
 
 | Fields     | Description          |
 | -------- | -------------- |
@@ -27,3 +21,6 @@ The following information need to be filled:
 | And Set Title To  | Once the countdown timer has been stopped, this field represents the countdown title that should be displayed. |
 | Show: Remaining Time | Time remaining until the acknowledgment due date is breached.  |
 | Show: Consumed Time | Time consumed to acknowledge the alert. |
+
+| [Usage](./usage.md) |
+|---------------------|

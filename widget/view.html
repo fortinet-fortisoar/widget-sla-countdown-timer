@@ -1,0 +1,90 @@
+<div class="widget widget-content">
+    <h6>{{title}}</h6>
+    <div id="clockdiv" ng-hide="slastate === 'NotSet'" ng-class="{'slaviolated': slastate === 'Missed','slaactive': slastate === 'Active','slamet': slastate === 'Met','slapaused': slastate === 'Paused'}" >
+          <table>
+              <tr>
+                  <td>
+                      <div class="largetext">{{daysSpan}}</div>
+                      <div class="smalltext">days</div>
+                  </td>
+                  <td>
+                      &nbsp;
+                  </td>
+                  <td>
+                      <div class="largetext">{{hoursSpan}}</div>
+                      <div class="smalltext">hr</div>
+                  </td>
+                  <td>
+                      &nbsp;
+                  </td>
+                  <td>
+                      <div class="largetext">{{minutesSpan}}</div>
+                      <div class="smalltext">min</div>
+                  </td>
+                  <td>
+                      &nbsp;
+                  </td>
+                  <td>
+                      <div class="largetext">{{secondsSpan}}</div>
+                      <div class="smalltext">sec</div>
+                  </td>
+              </tr>
+          </table>
+  
+      </div>
+  </div>
+  
+  
+  <style>
+      #clockdiv {
+          font-family: sans-serif;
+          display: inline-block;
+          text-align: center;
+          font-size: 14px;
+          overflow: hidden;
+      }
+  
+      h6 {
+          font-weight: 100;
+          font-size: 14px;
+          font-family: 'Lato', sans-serif;
+          font-weight: bold;
+      }
+  
+  
+  
+      .smalltext {
+          font-size: 13px;
+          display: inline-block;
+          vertical-align: bottom;
+          margin-top: 9px;
+      }
+  
+      .largetext {
+          font-size: 22px;
+          display: inline-block;
+          vertical-align: bottom;
+          float: left;
+          margin-right: 2px;
+  
+      }
+  
+      .slaviolated {
+          border-left: 5px solid red;
+          padding: 4px;
+      }
+    
+      .slamet{
+            border-left: 5px solid #14b341;
+          padding: 4px; 
+     } 
+    
+     .slaactive{
+            border-left: 5px solid #808080;
+          padding: 4px; 
+     } 
+    .slapaused{
+            border-left: 5px solid #ffcc00;
+          padding: 4px;
+    }
+  </style>
