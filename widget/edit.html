@@ -1,3 +1,7 @@
+<!-- Copyright start
+    MIT License
+    Copyright (c) 2026 Fortinet Inc
+Copyright end -->
 <form data-ng-submit="save()" name="editCountDownClock">
     <div class="modal-header">
         <h3 class="modal-title col-md-9">Edit SLA CountDown Timer</h3>
@@ -54,13 +58,13 @@
                     <div data-cs-messages="editCountDownClock.slafieldpaused"></div>
                 </div>
                 <div class="col-md-2 padding-right-0 padding-left-35 margin-top-sm">
-                    <label for="metitemvalue" class="control-label margin-top-sm text-align-center"
+                    <label for="pauseitemvalue" class="control-label margin-top-sm text-align-center"
                         data-ng-if="config.slaPausedOn.length > 0">is set
                         to<span class="text-danger">*</span></label>
                 </div>
                 <div class="col-md-4 padding-right-0">
                     <div class="form-group margin-bottom-0">
-                        <select name="metitemvalue" id="metitemvalue" class="form-control"
+                        <select name="pauseitemvalue" id="pauseitemvalue" class="form-control"
                             data-ng-if="config.slaPausedOn.length > 0"
                             data-ng-options="item.itemValue as item.itemValue for item in listItems"
                             data-ng-model="config.pausedItemvalue" required>
@@ -68,7 +72,21 @@
                         </select>
                     </div>
                 </div>
-                <div data-cs-messages="editCountDownClock.metitemvalue"></div>
+                <div data-cs-messages="editCountDownClock.pauseitemvalue"></div>
+            </div>
+
+            <div class="row margin-bottom-sm">
+                <div class="col-md-3 padding-right-0 margin-top-sm">
+                    <label for="slafield" class="control-label margin-top-sm"
+                        data-ng-if="config.pausedItemvalue.length > 0 && config.slaPausedOn.length > 0" >and set title to<span
+                            class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-9 padding-left-0 padding-right-20">
+                    <input id="pausedStateTitle" name="pausedStateTitle" type="text" class="form-control"
+                        data-ng-model="config.pausedStateTitle" data-ng-if="config.pausedItemvalue.length > 0 && config.slaPausedOn.length > 0" required>
+                </div>
+
+                <div data-cs-messages="editCountDownClock.pausedStateTitle"></div>
             </div>
 
             <label for="slafield" class="control-label">Stop clock<span data-uib-tooltip="SLA state on which count down timer should stop" data-tooltip-append-to-body="true"><i class="icon icon-information font-Size-13"></i></span></label>
