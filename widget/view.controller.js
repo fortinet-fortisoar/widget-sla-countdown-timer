@@ -5,9 +5,9 @@ Copyright end */
 (function () {
     angular
         .module('cybersponse')
-        .controller('slaCountDownClock201Ctrl', slaCountDownClock201Ctrl);
-    slaCountDownClock201Ctrl.$inject = ['$scope', '$state', '$filter', '$interval', 'Modules', 'config', 'websocketService'];
-    function slaCountDownClock201Ctrl($scope, $state, $filter, $interval, Modules, config, websocketService) {
+        .controller('slaCountDownClock202Ctrl', slaCountDownClock202Ctrl);
+    slaCountDownClock202Ctrl.$inject = ['$scope', '$state', '$filter', '$interval', 'Modules', 'config', 'websocketService'];
+    function slaCountDownClock202Ctrl($scope, $state, $filter, $interval, Modules, config, websocketService) {
         $scope.config = config;
         $scope.title = config.title;
         $scope.timeinterval = 0;

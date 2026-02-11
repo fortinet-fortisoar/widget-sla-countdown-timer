@@ -5,11 +5,11 @@ Copyright end */
 (function () {
     angular
         .module('cybersponse')
-        .controller('editSlaCountDownClock201Ctrl', editSlaCountDownClock201Ctrl);
+        .controller('editSlaCountDownClock202Ctrl', editSlaCountDownClock202Ctrl);
 
-    editSlaCountDownClock201Ctrl.$inject = ['$scope', '$uibModalInstance', '$state', 'config', 'appModulesService', 'Entity', 'picklistsService'];
+    editSlaCountDownClock202Ctrl.$inject = ['$scope', '$uibModalInstance', '$state', 'config', 'appModulesService', 'Entity', 'picklistsService'];
 
-    function editSlaCountDownClock201Ctrl($scope, $uibModalInstance, $state, config, appModulesService, Entity, picklistsService) {
+    function editSlaCountDownClock202Ctrl($scope, $uibModalInstance, $state, config, appModulesService, Entity, picklistsService) {
         $scope.cancel = cancel;
         $scope.save = save;
         $scope.config = config;
