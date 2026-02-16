@@ -1,9 +1,13 @@
+/* Copyright start
+    MIT License
+    Copyright (c) 2026 Fortinet Inc
+Copyright end */
 (function () {
     angular
         .module('cybersponse')
-        .controller('slaCountDownClock201Ctrl', slaCountDownClock201Ctrl);
-    slaCountDownClock201Ctrl.$inject = ['$scope', '$state', '$filter', '$interval', 'Modules', 'config', 'websocketService'];
-    function slaCountDownClock201Ctrl($scope, $state, $filter, $interval, Modules, config, websocketService) {
+        .controller('slaCountDownClock202Ctrl', slaCountDownClock202Ctrl);
+    slaCountDownClock202Ctrl.$inject = ['$scope', '$state', '$filter', '$interval', 'Modules', 'config', 'websocketService'];
+    function slaCountDownClock202Ctrl($scope, $state, $filter, $interval, Modules, config, websocketService) {
         $scope.config = config;
         $scope.title = config.title;
         $scope.timeinterval = 0;
@@ -23,7 +27,7 @@
             }
             else if (result[config.slaMappedOn].itemValue === config.pausedItemvalue) {
                 $scope.slastate = "Paused";
-                $scope.title = "SLA Paused";
+                $scope.title = config.pausedStateTitle;
                 stopCountDown('clockdiv', $scope.duedate, $scope.pausedate);
             }
             else if (result[config.slaMappedOn].itemValue != config.metItemvalue && result[config.duedate]) {
@@ -111,7 +115,7 @@
                             else if (result[config.slaMappedOn].itemValue === config.pausedItemvalue) {
                                 $interval.cancel($scope.timeinterval);
                                 $scope.slastate = "Paused";
-                                $scope.title = "SLA Paused"
+                                $scope.title = config.pausedStateTitle;
                                 $scope.pausedate = new Date($filter('unixToDate')(result[config.slapaused]));
                                 stopCountDown('clockdiv', $scope.duedate, $scope.pausedate);
                             }
