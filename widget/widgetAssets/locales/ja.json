@@ -1,8 +1,6 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "SLAカウントダウンタイマーを編集",
-        "EDIT_PAGE_TITLE": "タイトル",
-        "EDIT_PAGE_SELECT_AN_OPTION": "オプションを選択",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "SLA完了日を選択",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "SLA期限日を選択",
         "EDIT_PAGE_SELECT_SLA_PAUSED_DATE": "SLA一時停止日を選択",
@@ -11,10 +9,7 @@
         "EDIT_PAGE_IS_SET_TO": "に設定されている",
         "EDIT_PAGE_THEN_SET_TITLE_TO": "その場合、タイトルを次に設定",
         "EDIT_PAGE_STOP_CLOCK": "時計を停止",
-        "EDIT_PAGE_SHOW": "表示",
         "EDIT_PAGE_REMAINING_TIME": "残り時間",
-        "EDIT_PAGE_CONSUMED_TIME": "経過時間",
-        "EDIT_PAGE_SAVE_BUTTON": "保存",
-        "EDIT_PAGE_CANCEL_BUTTON": "キャンセル"
+        "EDIT_PAGE_CONSUMED_TIME": "経過時間"
     }
 }

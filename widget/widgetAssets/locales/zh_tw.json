@@ -1,8 +1,6 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "編輯SLA倒數計時器",
-        "EDIT_PAGE_TITLE": "標題",
-        "EDIT_PAGE_SELECT_AN_OPTION": "選擇一個選項",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "選擇SLA完成日期",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "選擇SLA到期日期",
         "EDIT_PAGE_SELECT_SLA_PAUSED_DATE": "選擇SLA暫停日期",
@@ -11,10 +9,7 @@
         "EDIT_PAGE_IS_SET_TO": "設定為",
         "EDIT_PAGE_THEN_SET_TITLE_TO": "然後將標題設定為",
         "EDIT_PAGE_STOP_CLOCK": "停止計時器",
-        "EDIT_PAGE_SHOW": "顯示",
         "EDIT_PAGE_REMAINING_TIME": "剩餘時間",
-        "EDIT_PAGE_CONSUMED_TIME": "已消耗時間",
-        "EDIT_PAGE_SAVE_BUTTON": "儲存",
-        "EDIT_PAGE_CANCEL_BUTTON": "取消"
+        "EDIT_PAGE_CONSUMED_TIME": "已消耗時間"
     }
 }

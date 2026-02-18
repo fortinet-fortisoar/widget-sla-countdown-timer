@@ -1,8 +1,6 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "SLA 카운트다운 타이머 편집",
-        "EDIT_PAGE_TITLE": "제목",
-        "EDIT_PAGE_SELECT_AN_OPTION": "옵션 선택",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "SLA 완료 날짜 선택",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "SLA 마감 날짜 선택",
         "EDIT_PAGE_SELECT_SLA_PAUSED_DATE": "SLA 일시중지 날짜 선택",
@@ -11,10 +9,7 @@
         "EDIT_PAGE_IS_SET_TO": "로 설정됨",
         "EDIT_PAGE_THEN_SET_TITLE_TO": "그런 다음 제목을 다음으로 설정",
         "EDIT_PAGE_STOP_CLOCK": "시계 중지",
-        "EDIT_PAGE_SHOW": "표시",
         "EDIT_PAGE_REMAINING_TIME": "남은 시간",
-        "EDIT_PAGE_CONSUMED_TIME": "사용 시간",
-        "EDIT_PAGE_SAVE_BUTTON": "저장",
-        "EDIT_PAGE_CANCEL_BUTTON": "취소"
+        "EDIT_PAGE_CONSUMED_TIME": "사용 시간"
     }
 }
