@@ -1,0 +1,15 @@
+{
+    "slaCountDownClock": {
+        "EDIT_PAGE_WIDGET_TITLE": "Modifier le minuteur de compte à rebours SLA",
+        "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "Sélectionner la date de fin du SLA",
+        "EDIT_PAGE_SELECT_SLA_DUE_DATE": "Sélectionner la date d’échéance du SLA",
+        "EDIT_PAGE_SELECT_SLA_PAUSED_DATE": "Sélectionner la date de mise en pause du SLA",
+        "EDIT_PAGE_PAUSE_CLOCK": "Mettre le chronomètre en pause",
+        "EDIT_PAGE_WHEN": "Lorsque",
+        "EDIT_PAGE_IS_SET_TO": "est défini sur",
+        "EDIT_PAGE_THEN_SET_TITLE_TO": "alors définir le titre sur",
+        "EDIT_PAGE_STOP_CLOCK": "Arrêter le chronomètre",
+        "EDIT_PAGE_REMAINING_TIME": "Temps restant",
+        "EDIT_PAGE_CONSUMED_TIME": "Temps écoulé"
+    }
+}
