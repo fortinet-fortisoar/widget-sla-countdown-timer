@@ -17,8 +17,13 @@
 | Select SLA Completion Date  | Select the appropriate option to set the timestamp at which the countdown timer should stop. It is the date/time that represents when the SLA condition is met. |
 | Select SLA Paused Date  | Select the appropriate option to set the date/time at which the SLA will be paused. |
 | Pause Clock | Defines the condition when the countdown timer should be paused. |
+| When | Select appropriate field on which the Paused SLA to be tracked |
+| Is Set to | Value of the field to be set for the paused SLA |
+| Then Set Title To  | Once the countdown timer has been paused, this field represents the countdown title that should be displayed. |
 | Stop Clock  | Defines the condition when the countdown timer should be stopped. |
-| And Set Title To  | Once the countdown timer has been stopped, this field represents the countdown title that should be displayed. |
+| When | Select appropriate field on which the Stopped SLA to be tracked |
+| Is Set to | Value of the field to be set for the stop SLA |
+| Then Set Title To  | Once the countdown timer has been stopped, this field represents the countdown title that should be displayed. |
 | Show: Remaining Time | Time remaining until the acknowledgment due date is breached.  |
 | Show: Consumed Time | Time consumed to acknowledge the alert. |
 

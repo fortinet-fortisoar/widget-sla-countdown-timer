@@ -4,7 +4,7 @@
 # Usage
 
 SLA Count Down Timer:
-Sets a count down timer which displays time remaining for SLA breach. Allows to display time remaining or consumed after SLA is acheived, based on setting
+Sets a count down timer which displays time remaining for SLA breach. Allows to display time remaining or consumed after SLA is achieved, based on setting
 - SLA Due Date
 - SLA Complete Date
 - Condition to stop and pause timer
@@ -18,7 +18,7 @@ This section details the process to edit the widget and use it with data from a 
 
 #### Appearance
 
-The following image shows Sla Count Down Timer in detailed view.
+The following image shows SLA Count Down Timer in detailed view.
 
 ![](./media/sla-countdown-timer-img.png)
 
