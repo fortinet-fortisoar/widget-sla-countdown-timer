@@ -1,7 +1,7 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "SLAカウントダウンタイマーを編集",
-        "EDIT_PAGE_TITLE": "SLAカウントダウンタイマーを編集",
+        "EDIT_PAGE_TITLE": "タイトル",
         "EDIT_PAGE_SELECT_AN_OPTION": "オプションを選択",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "SLA完了日を選択",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "SLA期限日を選択",

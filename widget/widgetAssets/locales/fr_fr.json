@@ -1,7 +1,7 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "Modifier le minuteur de compte à rebours SLA",
-        "EDIT_PAGE_TITLE": "Modifier le minuteur de compte à rebours SLA",
+        "EDIT_PAGE_TITLE": "Titre",
         "EDIT_PAGE_SELECT_AN_OPTION": "Sélectionner une option",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "Sélectionner la date de fin du SLA",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "Sélectionner la date d’échéance du SLA",

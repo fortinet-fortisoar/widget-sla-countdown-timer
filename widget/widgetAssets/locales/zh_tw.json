@@ -1,7 +1,7 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "編輯SLA倒數計時器",
-        "EDIT_PAGE_TITLE": "編輯SLA倒數計時器",
+        "EDIT_PAGE_TITLE": "標題",
         "EDIT_PAGE_SELECT_AN_OPTION": "選擇一個選項",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "選擇SLA完成日期",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "選擇SLA到期日期",

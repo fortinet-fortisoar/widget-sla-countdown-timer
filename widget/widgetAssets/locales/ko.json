@@ -1,7 +1,7 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "SLA 카운트다운 타이머 편집",
-        "EDIT_PAGE_TITLE": "SLA 카운트다운 타이머 편집",
+        "EDIT_PAGE_TITLE": "제목",
         "EDIT_PAGE_SELECT_AN_OPTION": "옵션 선택",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "SLA 완료 날짜 선택",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "SLA 마감 날짜 선택",

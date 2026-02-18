@@ -1,7 +1,7 @@
 {
     "slaCountDownClock": {
         "EDIT_PAGE_WIDGET_TITLE": "Edit SLA CountDown Timer",
-        "EDIT_PAGE_TITLE": "Edit SLA CountDown Timer",
+        "EDIT_PAGE_TITLE": "Title",
         "EDIT_PAGE_SELECT_AN_OPTION": "Select an Option",
         "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "Select SLA Complete Date",
         "EDIT_PAGE_SELECT_SLA_DUE_DATE": "Select SLA Due Date",
