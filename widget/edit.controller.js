@@ -69,10 +69,16 @@ Copyright end */
         }
 
         $scope.loadlistitem = function () {
-            $scope.fieldsArray.forEach(function (value, index, array) {
-                if (value.name === config.slaMappedOn || value.name === config.slaPausedOn) {
-                    picklistsService.loadPicklists(value).then(function (data) {
-                        $scope.listItems = data.options;
+            const fieldMap = {
+                [config.slaMappedOn]: 'mappedListItems',
+                [config.slaPausedOn]: 'pauseListItems'
+            };
+
+            $scope.fieldsArray.forEach(function (field) {
+                const targetField = fieldMap[field.name];
+                if (targetField) {
+                    picklistsService.loadPicklists(field).then(function (data) {
+                        $scope[targetField] = data.options;
                     });
                 }
             });
