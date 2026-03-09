@@ -71,7 +71,7 @@ Copyright end */
         $scope.loadlistitem = function () {
             const fieldMap = {
                 [config.slaMappedOn]: 'mappedListItems',
-                [config.slaPausedOn]: 'pauseListItems'
+                [config.slaPausedOn]: 'pausedListItems'
             };
 
             $scope.fieldsArray.forEach(function (field) {
