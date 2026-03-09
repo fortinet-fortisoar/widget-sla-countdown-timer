@@ -68,7 +68,7 @@ Copyright end -->
                     <div class="form-group margin-bottom-0">
                         <select name="pauseitemvalue" id="pauseitemvalue" class="form-control"
                             data-ng-if="config.slaPausedOn.length > 0"
-                            data-ng-options="item.itemValue as item.itemValue for item in listItems"
+                            data-ng-options="item.itemValue as item.itemValue for item in pausedListItems"
                             data-ng-model="config.pausedItemvalue" required>
                             <option value="">{{ ::'APP.LABEL.SELECT_AN_OPTION' | translate }} </option>
                         </select>
@@ -118,7 +118,7 @@ Copyright end -->
                     <div class="form-group margin-bottom-0">
                         <select name="metitemvalue" id="metitemvalue" class="form-control"
                             data-ng-if="config.slaMappedOn.length > 0"
-                            data-ng-options="item.itemValue as item.itemValue for item in listItems"
+                            data-ng-options="item.itemValue as item.itemValue for item in mappedListItems"
                             data-ng-model="config.metItemvalue" required>
                             <option value="">{{ ::'APP.LABEL.SELECT_AN_OPTION' | translate }} </option>
                         </select>
