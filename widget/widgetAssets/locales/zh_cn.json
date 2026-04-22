@@ -1,15 +1,15 @@
 {
     "slaCountDownClock": {
-        "EDIT_PAGE_WIDGET_TITLE": "编辑SLA倒计时定时器",
-        "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "选择SLA完成日期",
-        "EDIT_PAGE_SELECT_SLA_DUE_DATE": "选择SLA到期日期",
-        "EDIT_PAGE_SELECT_SLA_PAUSED_DATE": "选择SLA暂停日期",
+        "EDIT_PAGE_WIDGET_TITLE": "编辑 SLA 倒计时器",
+        "EDIT_PAGE_SELECT_SLA_COMPLETE_DATE": "SLA 完成日期",
+        "EDIT_PAGE_SELECT_SLA_DUE_DATE": "SLA 到期日期",
+        "EDIT_PAGE_SELECT_SLA_PAUSED_DATE": "SLA 暂停日期",
         "EDIT_PAGE_PAUSE_CLOCK": "暂停计时器",
         "EDIT_PAGE_WHEN": "当",
         "EDIT_PAGE_IS_SET_TO": "设置为",
-        "EDIT_PAGE_THEN_SET_TITLE_TO": "然后将标题设置为",
+        "EDIT_PAGE_THEN_SET_TITLE_TO": "则将标题设置为",
         "EDIT_PAGE_STOP_CLOCK": "停止计时器",
         "EDIT_PAGE_REMAINING_TIME": "剩余时间",
-        "EDIT_PAGE_CONSUMED_TIME": "已消耗时间"
+        "EDIT_PAGE_CONSUMED_TIME": "已用时间"
     }
 }
