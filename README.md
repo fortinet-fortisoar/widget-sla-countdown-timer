@@ -1,19 +1,23 @@
-## SLA Countdown Timer
+# Release Information
+
+- **Version**: 2.0.2
 
 - **Certified**: Yes
 
 - **Publisher**: Fortinet
 
-- **Compatibility**: 7.0.2 and higher
+- **Compatibility**: 7.6.5 and higher
 
-- **Applicable**: View Panel
+- **Applicable**: Detail View Panel
 
 - [Release Notes](./widget/release_notes.md)
 
 ## Overview
 
-Represents the time remaining to respond without breaching the SLA OR the time consumed to meet the SLA based on the widget [configuration](./docs/setup.md#configuration).
-Widget [Usage](./docs/usage.md).
+The **SLA Countdown Timer** widget displays the time remaining before an alert breaches its defined SLA, or the time consumed to meet the SLA.
+
+![SLA Countdown Timer image](./docs/res/sla-countdown-timer.png)
+
 
 ## Next Steps
 

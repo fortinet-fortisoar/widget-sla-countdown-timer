@@ -3,24 +3,18 @@
 
 # Usage
 
-SLA Count Down Timer:
-Sets a count down timer which displays time remaining for SLA breach. Allows to display time remaining or consumed after SLA is acheived, based on setting
-- SLA Due Date
-- SLA Complete Date
-- Condition to stop and pause timer
-- Show "Remaining time" or "Consumed time"
+>[!NOTE]
+>
+>Install the **SLA Management** solution pack to use this widget.
 
-## SLA Count Down Timer Widget Edit View
+**SLA Count Down Timer**: Displays a count down timer with time remaining for SLA breach.
+The following image shows SLA Count Down Timer in an alert's detailed view.
 
-This section details the process to edit the widget and use it with data from a specific record.
-![](./media/sla-countdown-timer.png)
+![](./res/sla-countdown-timer.png)
 
+Once added and configured, each new alert created shows this information. For information on adding and configuring this widget, refer to the [Configuration](./setup.md#configuration) section.
 
-#### Appearance
-
-The following image shows Sla Count Down Timer in detailed view.
-
-![](./media/sla-countdown-timer-img.png)
+## Next Steps
 
 | [Installation](./setup.md#installation) | [Configuration](./setup.md#configuration) |
 |-----------------------------------------|-------------------------------------------|
